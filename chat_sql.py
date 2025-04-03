@@ -13,7 +13,7 @@ load_environment()
 db_uri = (
     f"mssql+pyodbc://{os.environ['SQL_USERNAME']}:{os.environ['SQL_PASSWORD']}"
     f"@{os.environ['SQL_SERVER']}/{os.environ['SQL_DATABASE']}?"
-    "driver=ODBC+Driver+18+for+SQL+Server"
+    "driver=ODBC+Driver+17+for+SQL+Server"
 )
 print("Connecting to DB with URI:")
 print(db_uri)
