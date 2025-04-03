@@ -8,9 +8,13 @@ from sqlalchemy import text
 
 
 load_environment()
-
+user = os.environ["SQL_USERNAME"]
+pwd = os.environ["SQL_PASSWORD"]
+server = os.environ["SQL_SERVER"]
+database = os.environ["SQL_DATABASE"]
 
 db_uri = f"mssql+pymssql://{user}:{pwd}@{server}/{database}"
+
 print("Connecting to DB with URI:")
 print(db_uri)
 db = SQLDatabase.from_uri(db_uri)
