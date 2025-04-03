@@ -2,7 +2,7 @@ import streamlit as st
 from chat_sql import ask_db
 
 st.set_page_config(page_title="Chat with Azure SQL Database", page_icon="💬")
-st.title("💬 Chat with Azure SQL Database")
+st.title(" Chat with Azure SQL Database")
 
 # Initialize session state to store conversation
 if "messages" not in st.session_state:
