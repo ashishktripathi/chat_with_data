@@ -27,5 +27,5 @@ if prompt := st.chat_input("Ask a question about your data:"):
         st.chat_message("assistant").markdown(f"```python\n{formatted}\n```")
         st.session_state.messages.append({"role": "assistant", "content": f"```python\n{formatted}\n```"})
     except Exception as e:
-        st.chat_message("assistant").markdown("❌ Error: " + str(e))
-        st.session_state.messages.append({"role": "assistant", "content": "❌ Error: " + str(e)})
+        st.chat_message("assistant").markdown("Error: " + str(e))
+        st.session_state.messages.append({"role": "assistant", "content": "Error: " + str(e)})
