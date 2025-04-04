@@ -7,6 +7,7 @@ from utils.load_env import load_environment
 from sqlalchemy import text
 from langchain_openai import AzureChatOpenAI
 import time
+import pandas as pd 
 
 load_environment()
 user = os.environ["SQL_USERNAME"]
